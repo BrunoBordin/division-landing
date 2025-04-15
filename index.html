@@ -8,7 +8,20 @@
   <meta name="author" content="Division Team">
   <title>Division — A Token With Purpose</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --dark-bg: #0e0e0e;
+      --gradient-purple: #6B46C1;
+      --gradient-blue: #3B82F6;
+      --gradient-cyan: #06B6D4;
+    }
+    .bg-dark-bg { background-color: var(--dark-bg); }
+    .text-gradient-cyan { color: var(--gradient-cyan); }
+    .bg-gradient-to-r.from-gradient-purple.to-gradient-blue {
+      background-image: linear-gradient(to right, var(--gradient-purple), var(--gradient-blue));
+    }
+  </style>
 </head>
 <body class="bg-dark-bg text-white font-poppins">
   <!-- Header -->
@@ -16,7 +29,7 @@
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Logo -->
       <a href="/" class="text-2xl font-bold">
-        <img src="assets/logo.svg" alt="Division Logo" class="h-10">
+        <img src="assets/dpro-logo.jpg" alt="Division Logo" class="h-10">
       </a>
       <!-- Navigation -->
       <nav class="hidden md:flex space-x-6">
@@ -109,7 +122,7 @@
   <footer id="contact" class="bg-[#121212] py-12">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
       <!-- Logo -->
-      <img src="assets/logo.svg" alt="Division Logo" class="h-10 mb-4 md:mb-0">
+      <img src="assets/dpro-logo.jpg" alt="Division Logo" class="h-10 mb-4 md:mb-0">
       <!-- Quick Links -->
       <div class="flex space-x-6 mb-4 md:mb-0">
         <a href="#about" class="hover:text-gradient-cyan transition">About</a>
@@ -123,7 +136,6 @@
           <a href="#" class="hover:text-gradient-cyan transition">Telegram</a>
           <a href="#" class="hover:text-gradient-cyan transition">Twitter/X</a>
         </div>
-        <a href="mailto:contact@division.com" class="hover:text-gradient-cyan transition">contact@division.com</a>
       </div>
     </div>
     <div class="text-center mt-8 text-sm">© 2025 Division. All rights reserved.</div>
