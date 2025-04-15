@@ -1,9 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Base Styles */
 @layer base {
   html {
     @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-dark-bg text-white font-poppins;
+  }
+
+  h1, h2, h3 {
+    @apply font-bold;
+  }
+
+  a {
+    @apply transition-all duration-300;
+  }
+
+  /* Custom colors (extend no tailwind.config.js se necessário) */
+  .text-gradient {
+    background: linear-gradient(to right, #7F5AF0, #2CB67D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-light {
+    @apply text-gray-300;
+  }
+
+  .text-muted {
+    @apply text-gray-500;
+  }
+
+  .bg-dark-bg {
+    @apply bg-[#0F0F0F];
+  }
+
+  .bg-dark-gray {
+    @apply bg-[#1A1A1A];
+  }
+
+  .from-gradient-start {
+    @apply from-[#7F5AF0];
+  }
+
+  .to-gradient-end {
+    @apply to-[#2CB67D];
+  }
+}
+
+/* Component Styles */
+@layer components {
+  .btn-gradient {
+    @apply bg-gradient-to-r from-gradient-start to-gradient-end text-white px-5 py-2 md:px-6 md:py-3 rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply border border-gradient-start text-white px-5 py-2 md:px-6 md:py-3 rounded-full hover:bg-gradient-to-r hover:from-gradient-start hover:to-gradient-end hover:text-white transition-all duration-300;
+  }
+
+  .card {
+    @apply bg-neutral-900 bg-opacity-50 backdrop-blur-md rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all duration-300;
   }
 }
