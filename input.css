@@ -17,23 +17,23 @@
   }
 
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6;
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl font-bold leading-snug mb-4;
+    @apply text-4xl sm:text-5xl font-bold leading-snug mb-6;
   }
 
   h3 {
-    @apply text-xl md:text-2xl font-semibold leading-normal mb-3;
+    @apply text-xl sm:text-2xl font-semibold leading-normal mb-3;
   }
 
   p {
-    @apply text-base leading-relaxed mb-4;
+    @apply text-base sm:text-lg leading-relaxed mb-4;
   }
 
   a {
-    @apply transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gradient-start focus:ring-offset-2;
+    @apply transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gradient-start focus:ring-offset-2 focus:ring-offset-dark-bg;
   }
 
   /* Custom gradient text */
@@ -54,16 +54,113 @@
   /* Responsividade para telas pequenas */
   @media (max-width: 640px) {
     h1 {
-      @apply text-3xl;
+      @apply text-4xl;
     }
 
     h2 {
-      @apply text-2xl;
+      @apply text-3xl;
     }
 
     h3 {
       @apply text-lg;
     }
+
+    p {
+      @apply text-base;
+    }
+
+    /* Ajustes para os cards em telas pequenas */
+    #why .grid > div {
+      @apply p-4; /* Reduz o padding dos cards em telas pequenas */
+    }
+
+    #why .grid {
+      @apply gap-4; /* Reduz o gap entre os cards em telas pequenas */
+    }
+
+    /* Ajustes para o footer em telas pequenas */
+    footer .flex > div:last-child {
+      @apply gap-x-2; /* Reduz o espaçamento entre os ícones sociais */
+    }
+
+    footer img {
+      @apply mx-auto; /* Centraliza a logo quando empilhada */
+    }
+  }
+
+  /* Ajustes específicos para telas menores que 768px (mobile) */
+  @media (max-width: 767px) {
+    header .btn-gradient {
+      @apply text-base px-4 py-1; /* Reduz o tamanho do botão "Buy Now" em telas pequenas */
+    }
+
+    header svg.bi-telegram,
+    header svg.bi-twitter-x {
+      @apply w-6 h-6; /* Reduz o tamanho dos ícones sociais em telas pequenas */
+    }
+
+    /* Ajuste dinâmico do scroll-margin-top para telas menores */
+    [id="tokenomics"],
+    [id="why"],
+    [id="foundation"],
+    [id="buy"] {
+      scroll-margin-top: 7rem; /* 112px, aumentado para evitar sobreposição */
+    }
+
+    /* Ajuste para centralizar os elementos visíveis no header */
+    header .flex.items-center.justify-between > div:last-child {
+      @apply flex items-center gap-x-2; /* Reduz o gap entre os elementos à direita */
+    }
+  }
+
+  /* Ajuste para telas maiores que 768px */
+  @media (min-width: 768px) {
+    [id="tokenomics"],
+    [id="why"],
+    [id="foundation"],
+    [id="buy"] {
+      scroll-margin-top: 7rem; /* 112px, aumentado para mais espaço em telas grandes */
+    }
+
+    /* Ajuste para centralizar os links de navegação */
+    header .hidden.md\:flex {
+      @apply mx-auto; /* Garante que os links fiquem centralizados */
+    }
+  }
+
+  /* Ajustes para telas grandes (acima de 1024px) */
+  @media (min-width: 1024px) {
+    #tokenomics .grid > div {
+      @apply p-4; /* Reduz o padding dos cards para compactar o layout */
+    }
+
+    #tokenomics .grid {
+      @apply gap-6; /* Reduz o gap entre os cards para caber mais conteúdo */
+    }
+
+    #tokenomics {
+      @apply pt-24 pb-48; /* Reduz o padding superior e ajusta o inferior */
+    }
+
+    #tokenomics h2 {
+      @apply mt-6; /* Reduz a margem superior do título */
+    }
+
+    /* Reduz margens para compactar o layout */
+    #tokenomics > div > p {
+      @apply mb-10; /* Reduz o margin-bottom do parágrafo */
+    }
+
+    #tokenomics > div > div:first-of-type {
+      @apply mb-10; /* Reduz o margin-bottom do primeiro card */
+    }
+  }
+
+  /* Estilização da seção Foundation para melhor distinção */
+  #foundation {
+    background: linear-gradient(to bottom, #1A1A1A, #161616);
+    padding-bottom: 4rem; /* 64px de padding inferior para mais espaço */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil para separação */
   }
 }
 
@@ -76,7 +173,7 @@
 
   /* Gradient button */
   .btn-gradient {
-    @apply btn bg-gradient-to-r from-gradient-start to-gradient-end text-white hover:shadow-xl hover:bg-opacity-90;
+    @apply btn bg-gradient-to-r from-gradient-start to-gradient-end text-white hover:shadow-2xl hover:bg-opacity-90;
   }
 
   /* Outline button */
@@ -91,11 +188,12 @@
 
   /* Card component */
   .card {
-    @apply bg-neutral-900 bg-opacity-50 backdrop-blur-md rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300;
+    @apply bg-neutral-900 bg-opacity-50 backdrop-blur-md rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800;
   }
 
-  /* Ajustes para o header */
-  header a, footer a {
+  /* Ajustes para o header e footer */
+  header a,
+  footer a {
     @apply text-light hover:underline hover:text-gradient-start;
   }
 

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Division — A cryptocurrency token built for sustainability, transparency, and passive income.">
+  <meta name="description"
+    content="Division — A cryptocurrency token built for sustainability, transparency, and passive income.">
   <meta name="keywords" content="cryptocurrency, Division, tokenomics, passive income, blockchain">
   <meta name="author" content="Division Team">
   <meta property="og:title" content="Division — A Token With Purpose">
-  <meta property="og:description" content="Division: A cryptocurrency token built for sustainability, transparency, and passive income.">
+  <meta property="og:description"
+    content="Division: A cryptocurrency token built for sustainability, transparency, and passive income.">
   <meta property="og:image" content="https://divisioncrypto.com/assets/og-image.jpg">
   <meta property="og:url" content="https://divisioncrypto.com">
   <meta name="twitter:card" content="summary_large_image">
@@ -15,55 +18,79 @@
   <title>Division — A Token With Purpose</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"
+    media="print" onload="this.media='all'">
   <link rel="stylesheet" href="output.min.css">
 </head>
+
 <body>
+
   <!-- Header -->
-  <header class="fixed top-0 left-0 w-full bg-dark-bg bg-opacity-90 backdrop-blur-md z-50 shadow-md">
+  <header class="fixed top-0 left-0 w-full bg-dark-bg bg-opacity-95 backdrop-blur-lg z-50 shadow-lg">
     <div class="max-w-screen-2xl mx-auto px-4 py-4 flex items-center justify-between">
       <!-- Logo -->
       <a href="/" class="flex-shrink-0">
-        <img src="assets/logo.webp" srcset="assets/logo-100.webp 100w, assets/logo-200.webp 200w" sizes="(max-width: 600px) 100px, 200px" alt="Division Logo" class="h-14 w-16 sm:h-16 sm:w-18 object-contain">
+        <img src="assets/logo.webp" srcset="assets/logo-100.webp 100w, assets/logo-200.webp 200w"
+          sizes="(max-width: 600px) 100px, 200px" alt="Division Logo" class="h-14 w-16 sm:h-16 sm:w-18 object-contain">
       </a>
-      <!-- Hamburger Button -->
-      <button id="hamburger-btn" class="md:hidden text-light focus:outline-none focus:ring-2 focus:ring-gradient-start" aria-label="Toggle navigation menu" aria-expanded="false">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
       <!-- Navigation -->
-      <nav id="nav-menu" class="hidden md:flex flex-1 justify-center space-x-8" role="navigation" aria-label="Main navigation">
-        <a href="#tokenomics" class="text-light hover:text-gradient-start transition text-lg">Tokenomics</a>
-        <a href="#why" class="text-light hover:text-gradient-start transition text-lg">Why Invest</a>
-        <a href="#foundation" class="text-light hover:text-gradient-start transition text-lg">Foundation</a>
-        <a href="#buy" class="text-light hover:text-gradient-start transition text-lg">How to Buy</a>
+      <nav id="nav-menu" class="hidden md:flex flex-1 justify-center space-x-8" role="navigation"
+        aria-label="Main navigation">
+        <a href="#tokenomics"
+          class="text-light hover:text-gradient-start transition text-lg font-medium tracking-wide">Tokenomics</a>
+        <a href="#why" class="text-light hover:text-gradient-start transition text-lg font-medium tracking-wide">Why
+          Invest</a>
+        <a href="#foundation"
+          class="text-light hover:text-gradient-start transition text-lg font-medium tracking-wide">Foundation</a>
+        <a href="#buy" class="text-light hover:text-gradient-start transition text-lg font-medium tracking-wide">How to
+          Buy</a>
       </nav>
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-dark-bg bg-opacity-90">
-        <nav class="flex flex-col items-center py-4" role="navigation" aria-label="Mobile navigation">
-          <a href="#tokenomics" class="text-light hover:text-gradient-start transition py-2 text-lg">Tokenomics</a>
-          <a href="#why" class="text-light hover:text-gradient-start transition py-2 text-lg">Why Invest</a>
-          <a href="#foundation" class="text-light hover:text-gradient-start transition py-2 text-lg">Foundation</a>
-          <a href="#buy" class="text-light hover:text-gradient-start transition py-2 text-lg">How to Buy</a>
-        </nav>
-      </div>
-      <!-- CTA Button and Social Icons -->
+      <!-- CTA Button, Social Icons, and Hamburger Button -->
       <div class="flex items-center gap-x-3">
-        <a href="#buy" class="btn-gradient flex-shrink-0 text-lg px-6 py-2">Buy Now</a>
-        <a href="https://t.me/divisioncrypto" target="_blank" aria-label="Join our Telegram community">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+        <a href="#buy" class="btn-gradient flex-shrink-0 text-lg px-6 py-2 font-semibold tracking-wide">Buy Now</a>
+        <a href="https://t.me/divisioncrypto" target="_blank"
+          class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition"
+          aria-label="Join our Telegram community">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telegram"
+            viewBox="0 0 16 16">
             <title>Telegram</title>
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
           </svg>
         </a>
-        <a href="https://x.com/divisioncrypto" target="_blank" aria-label="Follow us on Twitter/X">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+        <a href="https://x.com/divisioncrypto" target="_blank"
+          class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition"
+          aria-label="Follow us on Twitter/X">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x"
+            viewBox="0 0 16 16">
             <title>Twitter/X</title>
-            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
           </svg>
         </a>
+        <!-- Hamburger Button (visible only on mobile) -->
+        <button id="hamburger-btn"
+          class="md:hidden text-light focus:outline-none focus:ring-2 focus:ring-gradient-start rounded-full p-2"
+          aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
       </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden absolute top-full left-0 w-full bg-dark-bg bg-opacity-95 backdrop-blur-lg shadow-lg">
+      <nav class="flex flex-col items-center py-6" role="navigation" aria-label="Mobile navigation">
+        <a href="#tokenomics"
+          class="text-light hover:text-gradient-start transition py-3 text-lg font-medium tracking-wide">Tokenomics</a>
+        <a href="#why"
+          class="text-light hover:text-gradient-start transition py-3 text-lg font-medium tracking-wide">Why Invest</a>
+        <a href="#foundation"
+          class="text-light hover:text-gradient-start transition py-3 text-lg font-medium tracking-wide">Foundation</a>
+        <a href="#buy"
+          class="text-light hover:text-gradient-start transition py-3 text-lg font-medium tracking-wide">How to Buy</a>
+      </nav>
     </div>
   </header>
 
@@ -71,60 +98,77 @@
   <main>
     <!-- Hero Section -->
     <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#1A1A1A] to-dark-bg">
-      <div class="max-w-screen-xl mx-auto px-8 text-center">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4">Division — A Token With Purpose</h1>
-        <p class="text-base sm:text-lg md:text-xl text-light mb-4 md:mb-6 max-w-2xl mx-auto">Built with solid tokenomics, real market strategies, and a focus on sustainable growth.</p>
-        <a href="#tokenomics" class="btn-gradient">Get Started</a>
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 text-center">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 text-gradient tracking-tight">
+          Division — A Token With Purpose</h1>
+        <p class="text-lg sm:text-xl md:text-2xl text-light mb-6 md:mb-8 max-w-3xl mx-auto font-medium leading-relaxed">
+          Built with solid tokenomics, real market strategies, and a focus on sustainable growth.</p>
+        <a href="#tokenomics"
+          class="btn-gradient text-lg px-8 py-3 font-semibold tracking-wide shadow-xl hover:shadow-2xl">Get Started</a>
       </div>
     </section>
 
     <!-- Tokenomics Section -->
     <div id="tokenomics-wrapper" class="scroll-smooth">
-      <section id="tokenomics" class="py-24 bg-gradient-to-b from-[#1A1A1A] via-gray-950 to-[#0F0F0F] scroll-mt-20 text-white">
-        <div class="max-w-screen-xl mx-auto px-6">
-          <h2 class="text-5xl font-bold text-center mb-6">How Division Creates Value for You</h2>
-          <p class="text-lg text-gray-400 text-center max-w-3xl mx-auto mb-16">
-            Each transaction fuels growth, funds automated trading, and shares profits with our holders — all while protecting the ecosystem.
+      <section id="tokenomics"
+        class="py-16 bg-gradient-to-b from-[#1A1A1A] via-gray-950 to-[#0F0F0F] scroll-mt-24 sm:scroll-mt-20 text-white min-h-screen">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-8">
+          <h2 class="text-4xl sm:text-5xl font-bold text-center mb-4 text-gradient tracking-tight">How Division Creates
+            Value for You</h2>
+          <p class="text-lg sm:text-xl text-gray-400 text-center max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
+            Each transaction fuels growth, funds automated trading, and shares profits with our holders — all while
+            protecting the ecosystem.
           </p>
-          <div class="bg-gradient-to-br from-gray-900 to-[#0F0F0F] p-8 rounded-2xl shadow-xl border border-gray-800 mb-16 text-center">
-            <h3 class="text-2xl font-semibold mb-3">🔍 Our Vision: Growth Through Every Transaction</h3>
-            <p class="text-gray-300 text-base leading-relaxed">
-              Every buy/sell transaction redistributes 10% back into the ecosystem — funding growth, powering AI trading, and rewarding holders.
+          <div
+            class="bg-gradient-to-br from-gray-900 to-[#0F0F0F] p-4 sm:p-6 rounded-2xl shadow-xl border border-gray-800 mb-12 text-center">
+            <h3 class="text-2xl sm:text-3xl font-semibold mb-2 text-light">🔍 Our Vision: Growth Through Every
+              Transaction</h3>
+            <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
+              Every buy/sell transaction redistributes 10% back into the ecosystem — funding growth, powering AI
+              trading, and rewarding holders.
             </p>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-700">
-              <h3 class="text-xl font-bold text-purple-400 mb-2">50% Developer Wallet — Infrastructure & Safety</h3>
-              <p class="text-gray-300 text-sm leading-relaxed">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-6 mb-16">
+            <div
+              class="bg-gray-900 p-4 lg:p-4 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-700 min-h-[250px] sm:min-h-[300px] lg:min-h-[350px]">
+              <h3 class="text-xl sm:text-2xl font-bold text-purple-400 mb-2">50% Developer Wallet — Infrastructure &
+                Safety</h3>
+              <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
                 Supports system stability, future upgrades, and acts as a safety net in case of major trading losses.
               </p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-700">
-              <h3 class="text-xl font-bold text-blue-400 mb-2">46% Transfer Wallet — Fuel for Automated Profits</h3>
-              <p class="text-gray-300 text-sm leading-relaxed">
+            <div
+              class="bg-gray-900 p-4 lg:p-4 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-700 min-h-[250px] sm:min-h-[300px] lg:min-h-[350px]">
+              <h3 class="text-xl sm:text-2xl font-bold text-blue-400 mb-2">46% Transfer Wallet — Fuel for Automated
+                Profits</h3>
+              <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
                 Funds the Trading Bot and handles profit redistribution — the engine behind our reward system.
               </p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-700">
-              <h3 class="text-xl font-bold text-green-400 mb-2">From Transaction to Value Creation</h3>
-              <ul class="text-gray-300 text-sm space-y-2 mt-2 list-disc list-inside">
+            <div
+              class="bg-gray-900 p-4 lg:p-4 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-700 min-h-[250px] sm:min-h-[300px] lg:min-h-[350px]">
+              <h3 class="text-xl sm:text-2xl font-bold text-green-400 mb-2">From Transaction to Value Creation</h3>
+              <ul class="text-gray-300 text-sm sm:text-base space-y-1 mt-2 list-disc list-inside">
                 <li><span class="font-semibold text-green-300">23%</span> goes to a high-accuracy Trading Bot</li>
                 <li><span class="font-semibold text-green-300">23%</span> is held for direct profit redistribution</li>
               </ul>
-              <p class="mt-3 text-green-300 font-medium">
+              <p class="mt-2 text-green-300 font-medium">
                 ♻️ The more trades, the greater the profit potential.
               </p>
-              <span class="block mt-2 text-purple-300 font-medium">
-                🔐 In case the Trading Bot loses 100% of its funds, the Developer Wallet guarantees a full reimbursement to holders — 1:1.
+              <span class="block mt-1 text-purple-300 font-medium">
+                🔐 In case the Trading Bot loses 100% of its funds, the Developer Wallet guarantees a full reimbursement
+                to holders — 1:1.
               </span>
             </div>
           </div>
-          <div class="bg-gradient-to-br from-gray-900 to-[#0F0F0F] p-8 rounded-2xl shadow-xl border border-gray-800 text-center">
-            <h3 class="text-2xl font-semibold mb-3">🎁 Reward Mechanics</h3>
-            <p class="text-gray-300 text-base leading-relaxed">
-              After successful trades, profits return to the ecosystem and are redistributed to all token holders. This reward system is automated and passive — no staking required.
+          <div
+            class="bg-gradient-to-br from-gray-900 to-[#0F0F0F] p-4 sm:p-6 rounded-2xl shadow-xl border border-gray-800 text-center">
+            <h3 class="text-2xl sm:text-3xl font-semibold mb-2 text-light">🎁 Reward Mechanics</h3>
+            <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
+              After successful trades, profits return to the ecosystem and are redistributed to all token holders. This
+              reward system is automated and passive — no staking required.
             </p>
-            <p class="mt-4 text-green-400 font-medium">
+            <p class="mt-3 text-green-400 font-medium">
               The stronger the community, the more value is generated and shared.
             </p>
           </div>
@@ -133,31 +177,36 @@
     </div>
 
     <!-- Why Invest Section -->
-    <section id="why" class="py-20 bg-gradient-to-b from-[#1A1A1A] to-[#121212] scroll-mt-20">
-      <div class="max-w-screen-xl mx-auto px-8">
-        <h2 class="text-4xl font-bold text-center mb-6">Why Invest in Division?</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="bg-[#1A1A1A] p-6 rounded-2xl shadow-lg text-center border border-gray-700">
-            <h3 class="text-xl font-semibold mb-2">Real Utility</h3>
-            <p class="text-sm text-light">
+    <section id="why" class="py-20 bg-gradient-to-b from-[#1A1A1A] to-[#121212] scroll-mt-24 sm:scroll-mt-20">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-8">
+        <h2 class="text-4xl sm:text-5xl font-bold text-center mb-6 text-gradient tracking-tight">Why Invest in Division?
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 pb-8">
+          <div
+            class="bg-[#1A1A1A] p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-700 text-center">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-light">Real Utility</h3>
+            <p class="text-sm sm:text-base text-light">
               Not just hype — a real bot with real results.
             </p>
           </div>
-          <div class="bg-[#1A1A1A] p-6 rounded-2xl shadow-lg text-center border border-gray-700">
-            <h3 class="text-xl font-semibold mb-2">Transparency</h3>
-            <p class="text-sm text-light">
+          <div
+            class="bg-[#1A1A1A] p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-700 text-center">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-light">Transparency</h3>
+            <p class="text-sm sm:text-base text-light">
               Wallets, trades, and results all publicly accessible.
             </p>
           </div>
-          <div class="bg-[#1A1A1A] p-6 rounded-2xl shadow-lg text-center border border-gray-700">
-            <h3 class="text-xl font-semibold mb-2">Passive Income</h3>
-            <p class="text-sm text-light">
+          <div
+            class="bg-[#1A1A1A] p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-700 text-center">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-light">Passive Income</h3>
+            <p class="text-sm sm:text-base text-light">
               Earn from trading without lifting a finger.
             </p>
           </div>
-          <div class="bg-[#1A1A1A] p-6 rounded-2xl shadow-lg text-center border border-gray-700">
-            <h3 class="text-xl font-semibold mb-2">Built by Experts</h3>
-            <p class="text-sm text-light">
+          <div
+            class="bg-[#1A1A1A] p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-700 text-center">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-light">Built by Experts</h3>
+            <p class="text-sm sm:text-base text-light">
               Developed by a team with deep knowledge in crypto and dev.
             </p>
           </div>
@@ -166,65 +215,83 @@
     </section>
 
     <!-- Foundation Section -->
-    <section id="foundation" class="py-20 bg-[#1A1A1A] scroll-mt-20">
-      <div class="max-w-screen-xl mx-auto px-8 text-center">
-        <h2 class="text-4xl font-bold mb-6">Our Foundation</h2>
-        <p class="text-lg text-light max-w-3xl mx-auto mb-8">
-          Division combines deep crypto market knowledge with robust technical development. It’s not hype — it’s strategy. We don’t sell promises. We deliver results.
+    <section id="foundation" class="py-20 bg-[#1A1A1A] scroll-mt-24 sm:scroll-mt-20 min-h-[400px] sm:min-h-[300px]">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 text-center">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-gradient tracking-tight">Our Foundation</h2>
+        <p class="text-lg sm:text-xl text-light max-w-3xl mx-auto mb-8 font-medium leading-relaxed">
+          Division combines deep crypto market knowledge with robust technical development. It’s not hype — it’s
+          strategy. We don’t sell promises. We deliver results.
         </p>
       </div>
     </section>
 
     <!-- How to Buy Section -->
-    <section id="buy" class="py-12 md:py-16">
-      <div class="max-w-screen-xl mx-auto px-8 text-center">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Smart Contract Info</h2>
+    <section id="buy" class="py-12 md:py-16 bg-gradient-to-b from-[#121212] to-dark-bg scroll-mt-24 sm:scroll-mt-20">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 text-center">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-gradient tracking-tight">Smart Contract Info</h2>
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
-          <div class="card inline-flex items-center justify-between px-4 py-2 text-sm sm:text-base text-light space-x-4">
-            <span id="token-address" class="font-semibold break-words cursor-pointer hover:underline">9VxExA1iRPbuLLdSJ2rB3nyBxsyLReT4aqzZBMaBaY1p</span>
+          <div
+            class="card inline-flex items-center justify-between px-4 sm:px-6 py-3 text-sm sm:text-base text-light space-x-4">
+            <span id="token-address"
+              class="font-semibold break-words cursor-pointer hover:underline">9VxExA1iRPbuLLdSJ2rB3nyBxsyLReT4aqzZBMaBaY1p</span>
             <span id="copy-feedback" class="text-gradient-start transition text-sm hidden ml-2">Copied</span>
           </div>
-          <p class="card inline-block px-4 py-2 text-sm sm:text-base text-light">
+          <p class="card inline-block px-4 sm:px-6 py-3 text-sm sm:text-base text-light">
             Symbol: <span class="font-semibold">$DVSN</span>
           </p>
         </div>
       </div>
-      <div class="max-w-screen-xl mx-auto px-8">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6">How To Buy $DVSN</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-8">
+        <h2 class="text-4xl sm:text-5xl font-bold text-center mb-6 text-gradient tracking-tight">How To Buy $DVSN</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           <div class="card flex flex-col items-center text-center">
-            <div class="w-14 h-14 bg-gradient-to-r from-gradient-start to-gradient-end rounded-full flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet" viewBox="0 0 16 16">
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-gradient-start to-gradient-end rounded-full flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-wallet"
+                viewBox="0 0 16 16">
                 <title>Wallet icon</title>
-                <path d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a2 2 0 0 1-1-.268M1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1"/>
+                <path
+                  d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a2 2 0 0 1-1-.268M1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1" />
               </svg>
             </div>
-            <h3 class="text-lg md:text-xl font-semibold mb-2">Create a Wallet</h3>
-            <p class="text-light text-sm md:text-base mb-4">Download Phantom wallet on mobile or as a browser extension.</p>
-            <a href="https://phantom.app/download" class="btn-gradient">Get Wallet</a>
+            <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-light">Create a Wallet</h3>
+            <p class="text-light text-sm sm:text-base mb-4 leading-relaxed">Download Phantom wallet on mobile or as a
+              browser extension.</p>
+            <a href="https://phantom.app/download" class="btn-gradient text-lg px-6 py-2 font-semibold">Get Wallet</a>
           </div>
           <div class="card flex flex-col items-center text-center">
-            <div class="w-14 h-14 bg-gradient-to-r from-gradient-start to-gradient-end rounded-full flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-gradient-start to-gradient-end rounded-full flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-basket2"
+                viewBox="0 0 16 16">
                 <title>Basket icon</title>
-                <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z"/>
-                <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z"/>
+                <path
+                  d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z" />
+                <path
+                  d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z" />
               </svg>
             </div>
-            <h3 class="text-lg md:text-xl font-semibold mb-2">Get $SOL</h3>
-            <p class="text-light text-sm md:text-base mb-4">Buy $SOL directly inside Phantom or transfer from exchange.</p>
-            <a href="https://raydium.io/swap/?inputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&outputMint=sol" class="btn-gradient">Buy $SOL</a>
+            <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-light">Get $SOL</h3>
+            <p class="text-light text-sm sm:text-base mb-4 leading-relaxed">Buy $SOL directly inside Phantom or transfer
+              from exchange.</p>
+            <a href="https://raydium.io/swap/?inputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&outputMint=sol"
+              class="btn-gradient text-lg px-6 py-2 font-semibold">Buy $SOL</a>
           </div>
           <div class="card flex flex-col items-center text-center">
-            <div class="w-14 h-14 bg-gradient-to-r from-gradient-start to-gradient-end rounded-full flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-gradient-start to-gradient-end rounded-full flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                 <title>Swap icon</title>
-                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                <path fill-rule="evenodd"
+                  d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5" />
               </svg>
             </div>
-            <h3 class="text-lg md:text-xl font-semibold mb-2">Swap $SOL for $DVSN</h3>
-            <p class="text-light text-sm md:text-base mb-4">Connect your wallet and swap $SOL for $DVSN using Jupiter or Raydium.</p>
-            <a href="https://raydium.io/swap/?inputMint=sol&outputMint=HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3" class="btn-gradient">Trade Now</a>
+            <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-light">Swap $SOL for $DVSN</h3>
+            <p class="text-light text-sm sm:text-base mb-4 leading-relaxed">Connect your wallet and swap $SOL for $DVSN
+              using Jupiter or Raydium.</p>
+            <a href="https://raydium.io/swap/?inputMint=sol&outputMint=HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3"
+              class="btn-gradient text-lg px-6 py-2 font-semibold">Trade Now</a>
           </div>
         </div>
       </div>
@@ -232,18 +299,43 @@
   </main>
 
   <!-- Footer -->
-  <footer id="contact" class="bg-[#121212] py-12">
-    <div class="max-w-screen-2xl mx-auto px-4 flex flex-col md:flex-row items-center">
-      <img src="assets/logo.webp" srcset="assets/logo-100.webp 100w, assets/logo-200.webp 200w" sizes="(max-width: 600px) 100px, 200px" alt="Division Logo" class="h-14 w-16 sm:h-16 sm:w-18 object-contain mb-4 md:mb-0 flex-shrink-0">
-      <div class="flex items-center space-x-4">
-        <a href="https://t.me/divisioncrypto" class="text-light hover:text-gradient-start transition text-lg" aria-label="Join our Telegram community">Telegram</a>
-        <a href="https://x.com/divisioncrypto" class="text-light hover:text-gradient-start transition text-lg" aria-label="Follow us on Twitter/X">X</a>
+  <footer class="bg-[#0F0F0F] py-6">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <!-- Logo (Canto Esquerdo) -->
+      <a href="/" class="flex-shrink-0">
+        <img src="assets/logo.webp" srcset="assets/logo-100.webp 100w, assets/logo-200.webp 200w"
+          sizes="(max-width: 600px) 100px, 200px" alt="Division Logo" class="h-12 w-14 sm:h-14 sm:w-16 object-contain">
+      </a>
+      <!-- Copyright (Centro) -->
+      <p class="text-light text-sm sm:text-base text-center">&copy; 2025 Division. All rights reserved.</p>
+      <!-- Social Icons (Canto Direito) -->
+      <div class="flex items-center gap-x-3">
+        <a href="https://t.me/divisioncrypto" target="_blank"
+          class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition"
+          aria-label="Join our Telegram community">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telegram"
+            viewBox="0 0 16 16">
+            <title>Telegram</title>
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+          </svg>
+        </a>
+        <a href="https://x.com/divisioncrypto" target="_blank"
+          class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition"
+          aria-label="Follow us on Twitter/X">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x"
+            viewBox="0 0 16 16">
+            <title>Twitter/X</title>
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+          </svg>
+        </a>
       </div>
     </div>
-    <div class="text-center mt-8 text-sm text-light">© 2025 Division. All rights reserved.</div>
   </footer>
 
   <!-- JavaScript -->
   <script defer src="assets/scripts.js"></script>
 </body>
+
 </html>
