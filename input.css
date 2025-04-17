@@ -80,7 +80,7 @@
 
     /* Ajustes para o footer em telas pequenas */
     footer .flex > div:last-child {
-      @apply gap-x-2; /* Reduz o espaçamento entre os ícones sociais */
+      @apply gap-x-3; /* Mesma margem que o header */
     }
 
     footer img {
@@ -109,7 +109,7 @@
 
     /* Ajuste para centralizar os elementos visíveis no header */
     header .flex.items-center.justify-between > div:last-child {
-      @apply flex items-center gap-x-2; /* Reduz o gap entre os elementos à direita */
+      @apply gap-x-3; /* Removido @apply items-center, pois já está no HTML */
     }
   }
 
@@ -124,7 +124,7 @@
 
     /* Ajuste para centralizar os links de navegação */
     header .hidden.md\:flex {
-      @apply mx-auto; /* Garante que os links fiquem centralizados */
+      @apply mx-auto; /* Garante que os links fiquem centralizados como o texto do footer */
     }
   }
 

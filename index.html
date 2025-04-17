@@ -25,74 +25,94 @@
 
 <body>
 
-  <!-- Header -->
-  <header class="fixed top-0 left-0 w-full bg-dark-bg bg-opacity-95 backdrop-blur-lg z-50 shadow-lg">
-    <div class="max-w-screen-2xl mx-auto px-4 py-4 flex items-center justify-between">
+ <!-- Header -->
+<header class="fixed top-0 left-0 w-full bg-[#0F0F0F] bg-opacity-95 backdrop-blur-md z-50 border-b border-gray-800">
+  <nav class="max-w-screen-2xl mx-auto px-4 sm:px-8">
+    <div class="flex items-center justify-between h-16 sm:h-20">
       <!-- Logo -->
-      <a href="/" class="flex-shrink-0">
-        <img src="assets/logo.webp" srcset="assets/logo-100.webp 100w, assets/logo-200.webp 200w"
-          sizes="(max-width: 600px) 100px, 200px" alt="Division Logo" class="h-14 w-16 sm:h-16 sm:w-18 object-contain">
-      </a>
-      <!-- Navigation -->
-      <nav id="nav-menu" class="hidden md:flex flex-1 justify-center space-x-8" role="navigation"
-        aria-label="Main navigation">
-        <a href="#tokenomics"
-          class="text-light hover:text-gradient-start transition text-lg font-medium tracking-wide">Tokenomics</a>
-        <a href="#why" class="text-light hover:text-gradient-start transition text-lg font-medium tracking-wide">Why
-          Invest</a>
-        <a href="#foundation"
-          class="text-light hover:text-gradient-start transition text-lg font-medium tracking-wide">Foundation</a>
-        <a href="#buy" class="text-light hover:text-gradient-start transition text-lg font-medium tracking-wide">How to
-          Buy</a>
-      </nav>
-      <!-- CTA Button, Social Icons, and Hamburger Button -->
-      <div class="flex items-center gap-x-3">
-        <a href="#buy" class="btn-gradient flex-shrink-0 text-lg px-6 py-2 font-semibold tracking-wide">Buy Now</a>
-        <a href="https://t.me/divisioncrypto" target="_blank"
-          class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition"
-          aria-label="Join our Telegram community">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telegram"
-            viewBox="0 0 16 16">
-            <title>Telegram</title>
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
-          </svg>
+      <div class="flex items-center">
+        <a href="/" class="flex-shrink-0">
+          <img src="assets/logo.webp" srcset="assets/logo-100.webp 100w, assets/logo-200.webp 200w" sizes="(max-width: 600px) 100px, 200px" alt="Division Logo" class="h-10 w-12 sm:h-12 sm:w-14 object-contain">
         </a>
-        <a href="https://x.com/divisioncrypto" target="_blank"
-          class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition"
-          aria-label="Follow us on Twitter/X">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x"
-            viewBox="0 0 16 16">
-            <title>Twitter/X</title>
-            <path
-              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-          </svg>
-        </a>
-        <!-- Hamburger Button (visible only on mobile) -->
-        <button id="hamburger-btn"
-          class="md:hidden text-light focus:outline-none focus:ring-2 focus:ring-gradient-start rounded-full p-2"
-          aria-label="Toggle navigation menu" aria-expanded="false">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
+      </div>
+      <!-- Navigation Links -->
+      <div class="hidden md:flex items-center">
+        <ul class="flex space-x-6 lg:space-x-8">
+          <li>
+            <a href="#tokenomics" class="text-light hover:text-gradient-start transition">Tokenomics</a>
+          </li>
+          <li>
+            <a href="#why" class="text-light hover:text-gradient-start transition">Why Division?</a>
+          </li>
+          <li>
+            <a href="#foundation" class="text-light hover:text-gradient-start transition">Foundation</a>
+          </li>
+          <li>
+            <a href="#buy" class="text-light hover:text-gradient-start transition">How to Buy</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Right Side: Buy Now Button and Social Icons -->
+      <div class="flex items-center gap-x-3 sm:gap-x-4">
+        <a href="#buy" class="btn-gradient">Buy Now</a>
+        <div class="hidden sm:flex items-center gap-x-3 sm:gap-x-4">
+          <a href="https://t.me/divisioncrypto" target="_blank" class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition" aria-label="Join our Telegram community">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+              <title>Telegram</title>
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+            </svg>
+          </a>
+          <a href="https://x.com/divisioncrypto" target="_blank" class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition" aria-label="Follow us on Twitter/X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              <title>Twitter/X</title>
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+            </svg>
+          </a>
+        </div>
+        <!-- Hamburger Menu (visible on mobile) -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition" aria-label="Toggle menu">
+            <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <title>Open Menu</title>
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu"
-      class="hidden md:hidden absolute top-full left-0 w-full bg-dark-bg bg-opacity-95 backdrop-blur-lg shadow-lg">
-      <nav class="flex flex-col items-center py-6" role="navigation" aria-label="Mobile navigation">
-        <a href="#tokenomics"
-          class="text-light hover:text-gradient-start transition py-3 text-lg font-medium tracking-wide">Tokenomics</a>
-        <a href="#why"
-          class="text-light hover:text-gradient-start transition py-3 text-lg font-medium tracking-wide">Why Invest</a>
-        <a href="#foundation"
-          class="text-light hover:text-gradient-start transition py-3 text-lg font-medium tracking-wide">Foundation</a>
-        <a href="#buy"
-          class="text-light hover:text-gradient-start transition py-3 text-lg font-medium tracking-wide">How to Buy</a>
-      </nav>
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="md:hidden hidden bg-[#0F0F0F] border-t border-gray-800">
+      <ul class="flex flex-col items-center space-y-4 py-4">
+        <li>
+          <a href="#tokenomics" class="text-light hover:text-gradient-start transition">Tokenomics</a>
+        </li>
+        <li>
+          <a href="#why" class="text-light hover:text-gradient-start transition">Why Division?</a>
+        </li>
+        <li>
+          <a href="#foundation" class="text-light hover:text-gradient-start transition">Foundation</a>
+        </li>
+        <li>
+          <a href="#buy" class="text-light hover:text-gradient-start transition">How to Buy</a>
+        </li>
+        <li class="flex items-center gap-x-3 sm:gap-x-4">
+          <a href="https://t.me/divisioncrypto" target="_blank" class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition" aria-label="Join our Telegram community">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+              <title>Telegram</title>
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+            </svg>
+          </a>
+          <a href="https://x.com/divisioncrypto" target="_blank" class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition" aria-label="Follow us on Twitter/X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              <title>Twitter/X</title>
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </nav>
+</header>
 
   <!-- Main Content -->
   <main>
@@ -298,38 +318,29 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-[#0F0F0F] py-6">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <!-- Logo (Canto Esquerdo) -->
-      <a href="/" class="flex-shrink-0">
-        <img src="assets/logo.webp" srcset="assets/logo-100.webp 100w, assets/logo-200.webp 200w"
-          sizes="(max-width: 600px) 100px, 200px" alt="Division Logo" class="h-12 w-14 sm:h-14 sm:w-16 object-contain">
-      </a>
-      <!-- Copyright (Centro) -->
-      <p class="text-light text-sm sm:text-base text-center">&copy; 2025 Division. All rights reserved.</p>
-      <!-- Social Icons (Canto Direito) -->
-      <div class="flex items-center gap-x-3">
-        <a href="https://t.me/divisioncrypto" target="_blank"
-          class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition"
-          aria-label="Join our Telegram community">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telegram"
-            viewBox="0 0 16 16">
-            <title>Telegram</title>
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
-          </svg>
-        </a>
-        <a href="https://x.com/divisioncrypto" target="_blank"
-          class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition"
-          aria-label="Follow us on Twitter/X">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x"
-            viewBox="0 0 16 16">
-            <title>Twitter/X</title>
-            <path
-              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-          </svg>
-        </a>
+  <footer class="bg-[#0F0F0F] py-6 border-t border-gray-800">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-y-4 sm:gap-y-0">
+        <div>
+          <img src="assets/logo.webp" srcset="assets/logo-100.webp 100w, assets/logo-200.webp 200w" sizes="(max-width: 600px) 100px, 200px" alt="Division Logo" class="h-10 w-12 sm:h-12 sm:w-14 object-contain">
+        </div>
+        <div class="text-center">
+          <p class="text-gray-400 text-sm sm:text-base">© 2025 Division. All rights reserved.</p>
+        </div>
+        <div class="flex items-center gap-x-3 sm:gap-x-4">
+          <a href="https://t.me/divisioncrypto" target="_blank" class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition" aria-label="Join our Telegram community">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+              <title>Telegram</title>
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+            </svg>
+          </a>
+          <a href="https://x.com/divisioncrypto" target="_blank" class="p-2 hover:bg-gradient-start hover:bg-opacity-20 rounded-full transition" aria-label="Follow us on Twitter/X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              <title>Twitter/X</title>
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
