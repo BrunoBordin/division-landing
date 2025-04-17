@@ -1,16 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: [
+    './*.html', // Escaneia arquivos HTML na raiz
+    './src/**/*.{html,js}', // Escaneia arquivos em subdiretórios (se aplicável)
+  ],
   theme: {
     extend: {
       colors: {
-        "dark-bg": "#0A0A0A", // Updated background color
-        "gradient-start": "#ED109B", // Gradient start (from logo)
-        "gradient-end": "#6D00ED", // Gradient end (from logo)
-        "text-light": "#E5E7EB", // Light gray for text (Tailwind's gray-200)
+        'dark-bg': '#0F0F0F', // Fundo principal
+        'dark-gray': '#1A1A1A', // Fundo secundário
+        'gradient-start': '#7F5AF0', // Início do gradiente (roxo)
+        'gradient-end': '#2CB67D', // Fim do gradiente (verde)
+        'crypto-blue': '#1E3A8A', // Azul escuro para identidade de cripto
+        'crypto-silver': '#E5E7EB', // Prata metálico para detalhes
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        poppins: ['Poppins', 'sans-serif'], // Fonte personalizada
       },
     },
   },
